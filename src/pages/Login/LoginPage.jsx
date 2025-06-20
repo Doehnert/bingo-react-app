@@ -12,7 +12,6 @@ import {
   useToast
 } from '@chakra-ui/react';
 import { useUser } from '../../contexts/UserContext';
-import axios from 'axios';
 
 const LoginPage = () => {
   const [name, setName] = useState('');
@@ -83,15 +82,7 @@ const LoginPage = () => {
                   size="lg"
                   w="full"
                   isDisabled={!name.trim()}
-                  bgGradient="linear(to-r, blue.400, purple.600)"
-                  _hover={{
-                    bgGradient: 'linear(to-r, blue.500, purple.700)',
-                    transform: 'translateY(-2px)',
-                    boxShadow: 'lg',
-                  }}
-                  _active={{
-                    transform: 'translateY(0)',
-                  }}
+
                 >
                   Start Playing
                 </Button>

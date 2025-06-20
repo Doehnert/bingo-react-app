@@ -248,8 +248,7 @@ const GamePage = () => {
           }
         }
       );
-      // if (response.data.correct === true) {
-      if (true) {
+      if (response.data.correct === true) {
         const newBoardNumbers = boardNumbers.map(row =>
           row.map(c => c.number === cell.number ? { ...c, marked: !c.marked } : c)
         );
