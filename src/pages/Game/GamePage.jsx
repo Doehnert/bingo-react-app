@@ -16,7 +16,7 @@ import axios from 'axios';
 import Header from '../../components/Header';
 
 const GamePage = () => {
-  const { userName, logout, token } = useUser();
+  const { token } = useUser();
   const [boardNumbers, setBoardNumbers] = useState(null);
   const [currentNumber, setCurrentNumber] = useState(null);
   const [loading, setLoading] = useState(false);

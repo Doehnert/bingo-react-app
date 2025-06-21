@@ -56,6 +56,7 @@ export const UserProvider = ({ children }) => {
     setUserName('');
     localStorage.removeItem('userName');
     localStorage.removeItem('token');
+    localStorage.removeItem('bingoBoard');
   };
 
   const value = {
